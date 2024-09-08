@@ -1,0 +1,139 @@
+/* 样式表 styles.css */
+
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    position: relative;
+}
+
+/* 导航栏样式 */
+#navbar {
+    position: absolute;
+    width: 100%;
+    height: 46px;
+    left: 0;
+    top: 0;
+    background: #009999;
+}
+
+.navbar-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-logo {
+    position: absolute;
+    left: 170px;
+    top: 13px;
+}
+
+.navbar-items {
+    position: absolute;
+    left: 328px;
+    top: 13px;
+    display: flex;
+    gap: 71px;
+}
+
+.navbar-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar-title {
+    position: absolute;
+    left: 623px;
+    top: 15px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #009999;
+}
+
+/* 主体内容样式 */
+#app {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    margin-top: 60px; /* 确保内容不会被导航栏覆盖 */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+main {
+    margin-top: 20px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#options-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#options-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#options-list input[type="radio"] {
+    margin-right: 10px;
+}
+
+#submit-all {
+    margin-top: 20px;
+}
+
+#warning-text {
+    color: red;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#progress {
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}

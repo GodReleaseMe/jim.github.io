@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择题复习系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo"><img src="1.svg"></div>
+            <div class="navbar-items">
+                <a href="#" class="navbar-item">课程</a>
+                <a href="#" class="navbar-item">公开课</a>
+                <a href="#" class="navbar-item">考试</a>
+            </div>
+            <div class="navbar-title">选择题小工具</div>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <div id="app">
+        <header>
+            <h1>选择题复习系统</h1>
+            <button id="load-data">导入题目数据</button>
+            <select id="mode-selector">
+                <option value="all">复习所有题目</option>
+                <option value="wrong">只复习错题</option>
+            </select>
+        </header>
+
+        <main>
+            <div id="question-container">
+                <p id="question-text"></p>
+                <ul id="options-list"></ul>
+                <p id="warning-text" class="hidden">请对所有题目作答后再提交。</p>
+                <button id="submit-all">提交所有答案</button>
+                <p id="explanation-text" class="hidden"></p>
+            </div>
+        </main>
+
+        <footer>
+            <button id="prev-question">上一题</button>
+            <button id="next-question">下一题</button>
+            <div id="progress">
+                <p>进度: <span id="progress-info"></span></p>
+                <p>正确率: <span id="accuracy"></span></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
